@@ -18,7 +18,7 @@
 
 1. Ensure you have Java installed and configured on your system.
 2. Open a terminal or command prompt and navigate to the root directory of this project (assignment-2).
-3. Compile the Java source code using a command like ``javac src/*.java.`` This will create class files in the same directory.
+3. Compile the Java source code using a command like ``javac src/*.java``. This will create class files in the same directory.
 4. Run the program using the command ``java BankRunner``. This will execute the program and allow you to interact with the bank functionalities.
 
 **Note:** This README assumes a basic understanding of Java development and project structure.
