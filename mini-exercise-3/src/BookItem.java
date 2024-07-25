@@ -11,7 +11,7 @@ public class BookItem extends LibraryItem implements Book {
     @Override
     public void displayBookInfo() {
         System.out.println("Title: " + getTitle());
-        System.out.println("Item Number: " + itemNumber);
+        System.out.println("Item Number: " + super.getItemNumber());
         System.out.println("Available: " + (available ? "Yes" : "No"));
     }
 
@@ -31,11 +31,6 @@ public class BookItem extends LibraryItem implements Book {
     @Override
     public boolean isCheckedOut() {
         return !available;
-    }
-
-    // Getter and setter for availability
-    public boolean isAvailable() {
-        return available;
     }
 
     public void setAvailable(boolean available) {

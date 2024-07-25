@@ -10,14 +10,21 @@ public abstract class LibraryItem {
         this.itemNumber = itemNumber;
     }
 
-    // Getter for title
+    // Getters and Setters
     public String getTitle() {
         return title;
     }
 
-    // Setter for title
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public int getItemNumber() {
+        return itemNumber;
+    }
+
+    public void setItemNumber(int itemNumber) {
+        this.itemNumber = itemNumber;
     }
 
     // Abstract method to display book items
