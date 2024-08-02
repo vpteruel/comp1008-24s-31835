@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vpteruel.fxcalculator.CalculatorController" stylesheets="@calculator.css">
+    <TextField fx:id="display" editable="false" prefHeight="50" style="-fx-font-size: 24px;" />
+        <GridPane hgap="5" vgap="5">
+        <!-- First Row -->
+        <Button text="C" onAction="#handleButtonAction" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+        <Button text="/" onAction="#handleButtonAction" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+        <Button text="*" onAction="#handleButtonAction" GridPane.rowIndex="0" GridPane.columnIndex="2" />
+        <Button text="-" onAction="#handleButtonAction" GridPane.rowIndex="0" GridPane.columnIndex="3" />
+
+        <!-- Second Row -->
+        <Button text="7" onAction="#handleButtonAction" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+        <Button text="8" onAction="#handleButtonAction" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+        <Button text="9" onAction="#handleButtonAction" GridPane.rowIndex="1" GridPane.columnIndex="2" />
+        <Button text="+" onAction="#handleButtonAction" GridPane.rowIndex="1" GridPane.columnIndex="3" GridPane.rowSpan="2" />
+
+        <!-- Third Row -->
+        <Button text="4" onAction="#handleButtonAction" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+        <Button text="5" onAction="#handleButtonAction" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+        <Button text="6" onAction="#handleButtonAction" GridPane.rowIndex="2" GridPane.columnIndex="2" />
+        
+        <!-- Fourth Row -->
+        <Button text="1" onAction="#handleButtonAction" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+        <Button text="2" onAction="#handleButtonAction" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+        <Button text="3" onAction="#handleButtonAction" GridPane.rowIndex="3" GridPane.columnIndex="2" />
+        <Button text="=" onAction="#handleButtonAction" GridPane.rowIndex="3" GridPane.columnIndex="3" GridPane.rowSpan="2" />
+
+        <!-- Fifth Row -->
+        <Button text="0" onAction="#handleButtonAction" GridPane.rowIndex="4" GridPane.columnIndex="0" GridPane.columnSpan="2" />
+        <Button text="." onAction="#handleButtonAction" GridPane.rowIndex="4" GridPane.columnIndex="2" />
+    </GridPane>
+</VBox>
