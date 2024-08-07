@@ -97,11 +97,11 @@ public class HelloController {
         }
 
         // calling method to Open new window with welcome message
-        openWelcomeWindow(name, contact, country, genderText);
+        // openWelcomeWindow(name, contact, country, genderText);
 
         //MVC
-        /*UserModel user = new UserModel(name, contact, country, genderText);
-        openWelcomeWindow(user); */
+        UserModel user = new UserModel(name, contact, country, genderText);
+        openWelcomeWindow(user);
     }
 
     //Method to open 2nd window
@@ -117,7 +117,7 @@ public class HelloController {
             //With 2nd window object calling method to pass all fields' values to 2nd window
             controller.initData(name, contact, country, gender);
 
-            Scene scene = new Scene(parent,380, 300, true);
+            Scene scene = new Scene(parent, 380, 300, true);
 
             //Displaying 2nd window by setting the title of 2nd window
             Stage stage = new Stage();
@@ -131,20 +131,28 @@ public class HelloController {
     }
 
     //MVC
-   /* private void openWelcomeWindow(UserModel user) {
+    private void openWelcomeWindow(UserModel user) {
         try {
-
+            //Loading .fxml of 2nd window
             FXMLLoader loader = new FXMLLoader(getClass().getResource("welcome.fxml"));
-            Parent root = loader.load();
+            Parent parent = loader.load();
+
+            //Getting controller of 2nd window and creating object of 2nd window controller class
             WelcomeController controller = loader.getController();
+
+            //With 2nd window object calling method to pass all fields' values to 2nd window
             controller.initData(user);
 
+            Scene scene = new Scene(parent, 380, 300, true);
+
+            //Displaying 2nd window by setting the title of 2nd window
             Stage stage = new Stage();
-            stage.setScene(new Scene(root));
+            stage.setResizable(true);
             stage.setTitle("Welcome");
+            stage.setScene(scene);
             stage.show();
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
-    }*/
+    }
 }
