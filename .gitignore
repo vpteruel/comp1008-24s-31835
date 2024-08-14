@@ -48,3 +48,4 @@ replay_pid*
 
 # End of https://www.toptal.com/developers/gitignore/api/java,visualstudiocode
 /assignment-3/fxcalculator/target/
+/assignment-3/CubeCalculator/target/
