@@ -7,7 +7,7 @@
 <?import javafx.geometry.Insets?>
 
 <VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vpteruel.cubecalculator.CubeCalculatorController">
-    <TextField fx:id="numberInput" promptText="Enter a number" style="padding: 0 8px 0 8px"  />
+    <TextField fx:id="numberInput" promptText="Enter a number" />
 
     <Button text="Calculate Cube" onAction="#calculateCube" />
 
